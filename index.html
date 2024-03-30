@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="conatiner" >
+      <div class="navbar" >
+        <div class="logo">
+          <p><span>P</span>ortfolio.</p>
+        </div>
+        <div class="info">
+          <ul id="sidemenu">
+            <li><a href="#home"  class="nav-link">Home</a></li>
+            <li><a href="#About" class="nav-link">About Me</a></li>
+            <li><a href="#Project" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <i class="fa-solid fa-xmark nav-icon" onclick="closemenu()"></i>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars nav-icon" onclick="openmenu()"></i>
+      </div>
+      <div id="home">
+        <div class="img-section" >
+          <div class="content">
+            <h1>
+              Hi, I am <span>Ayush Kumar</span> <br />
+             <span class="auto"></span>
+            </h1>
+
+            <a href="#About"><button class="about-btn" >More About me!</button></a>
+          </div>
+          <div class="img"></div>
+       </div>
+    </div>
+  </div>
+  <div class="divider-1" ></div>
+  <!-- <-- .......about-section......... -->
+    <div class="about" id="About">
+    <div class="row">
+      <div class="about-col-1">
+        <h1 class="heading">About 
+          <span>Me</span></h1>
+        <div class="about-me">
+          <p>I am a goal oriented and hardworking student.I like to work in team and i always try to give my best knowledge in my work, And what i might lack in skills i make up for with my determination to learns.</p>
+        </div>
+      </div>
+      <div class="about-col-2">
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+          <p class="tab-links" onclick="opentab('Technical Skills')">Technical Skills</p>
+          <p class="tab-links" onclick="opentab('Professional Skills')">Professional skills</p>
+        </div>
+        <div class="tab-contents active-tab" id="Education">
+          <ul>
+            <li>2018</li>
+            <span>I had completed 10th with 84.4%</span>
+            <li>2020</li>
+            <span>I had completed 12th with 72.4%</span>
+            <li>2020-2024</li>
+            <span>I am pursuing Btech in Electical Engineering from KSVCEM Bijnor.</span>
+          </ul>
+        </div>
+        <div class="tab-contents" id="Technical Skills">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT</li>
+          </ul>
+        </div>   
+        <div class="tab-contents" id="Professional Skills">
+          <ul>
+            <ul>
+              <li>Creativity</li>
+              <li>Problem Solving</li>
+              <li>Team Work</li>
+            </ul>
+          </ul>
+        </div> 
+      </div>
+    </div>
+   </div>
+  <div class="divider-1" id="Skills"></div>       
+<!-- ...........project section......... -->
+    <div class="project-section" id="Project">
+        <div class="project-container">
+          <h1>My <span> Project</span></h1>
+          <div class="project-list">
+                <div class="first">
+                  <a href="https://brilliant-bavarois-17b4bb.netlify.app "  >
+                   <h1>Restorent wepsite</h1>
+                   <p>This is a simple Restorent Website in which i use HTML and CSS only.</p>
+                   <a href="https://brilliant-bavarois-17b4bb.netlify.app">Explore</a>
+                  </a>
+                </div>
+              <div class="second">
+                 <a href="https://playful-capybara-6665dd.netlify.app/" >
+                 <h1>Spotify Clone</h1>
+                 <p>This is a Spotify Clone in which i use HTML, CSS and JAVASCRIPT. </p>
+                 <a href="https://playful-capybara-6665dd.netlify.app/">Explore</a>
+                 </a>
+                </div>
+              <div class="third">
+                 <a href="https://ubiquitous-mandazi-a7c691.netlify.app"  >
+                 <h1>Weather App</h1>
+                 <p>Weather app by using HTML, CSS and JAVASCRIPT.!</p>
+                 <a href="https://ubiquitous-mandazi-a7c691.netlify.app">Explore</a>
+                </a>
+              </div>
+          </div>
+        </div>
+    </div>
+<!-- .......footer-section........ -->
+    <div class="divider-1" id="contact" ></div>
+    <div class="footer" >
+      <div class="footer-container">
+        <div class="contact-info">
+          <h1>Contact <span>Me</span></h1>
+          <p><i class="fa-solid fa-envelope"></i>ayushkumar83790@gmail.com</p>
+        
+          <p>  <i class="fa-solid fa-phone"></i>6396536241</p> 
+          <div class="social-links">
+            <a href="https://www.linkedin.com/feed/?trk=sem-ga_campid.14650114788_asid.151761418307_crid.657403558715_kw.linkedin%20login_d.c_tid.kwd-12704335873_n.g_mt.e_geo.9301861"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i>
+          </div>
+          <a href="images/1700403179401-01.jpeg" download class="download">Download Resume</a>
+        </div>
+        <div class="info-form">
+         <form>
+          <input type="text" name="name" placeholder="enter your name" required>
+          <input type="email" name="email" placeholder="enter your email">
+          <textarea name="text" cols="30" rows="5" placeholder="your message"></textarea>
+          <button class="btn" type="reset">Submit </button>
+         </form>
+        </div>
+      </div>
+    </div>
+    <div class="uparrow">
+      <a href="#home"><i class="fa-regular fa-circle-up" ></i></a>
+    </div>
+    <div class="copyright">Copyright  &copy; Ayush. Made with <i class="fa-solid fa-heart"></i> by Ayush Kumar.</div>
+    <script src="app.js"></script>
+  </body>
+</html>
