@@ -104,6 +104,9 @@ body{
     transition: 1s linear;
     animation: Span 0.5s ease-in 0.2s ;
 }
+.about-me p{
+   text-align: justify;
+}
 
 
 

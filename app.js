@@ -1,11 +1,10 @@
 var typed = new Typed(".auto",{
-    strings:["Frontend Developer"],
+    strings:["MERN-stack Developer"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
     loop:true
 });
-
 
 
 let sidemenu = document.getElementById("sidemenu");
