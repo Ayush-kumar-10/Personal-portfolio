@@ -35,6 +35,8 @@ body{
 .info{
     position: absolute;
     left: 60%;
+    display: flex;
+    
 }
 .info ul li{
     display: inline-block;
@@ -108,9 +110,6 @@ body{
    text-align: justify;
 }
 
-
-
-
 .content a{
     transition: 1s linear;
     animation: btnslide 0.5s ease-in 0.2s ;
@@ -176,7 +175,6 @@ body{
 /*....... About section.......... */
  .about{
     padding: 5rem 8rem 3rem 8rem;
-    color: #ababab;
     display: flex;
     flex-wrap: wrap;
 }
@@ -185,19 +183,17 @@ body{
 }
 .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 30%;
+    flex-basis: 40%;
     display: flex;
     flex-wrap: wrap;
 }
 .about-col-1 h1{
     font-size:3rem ;
     font-weight: 500;
-    color: #fff;
-
 }
 .about-me{
     margin-top: 10px;
@@ -207,7 +203,6 @@ body{
 
 .about-col-2{
     flex-basis: 50%;
-    /* display: flex; */
     flex-wrap: wrap;
     min-height: 260px;
     box-shadow: border-box;
@@ -239,7 +234,6 @@ body{
     width: 50%;
 }
 .tab-contents ul li{
-   /* list-style: none; */
    margin: 10px 0px;
 
 }
@@ -266,8 +260,6 @@ body{
     padding: 4rem 8rem;
  
 }
-
-
 .project-container h1{
     font-size: 3rem;
     font-weight: 700;
@@ -378,7 +370,6 @@ input,textarea{
     color: white;
     font-size: 1.3rem;
     border-radius: 6px;
-
 }
 
 .uparrow{
@@ -428,7 +419,76 @@ input,textarea{
 .copyright i{
     color: red;
 }
-@media(max-width:400px){
+.colorEffect i{
+    font-size: 1.5rem;
+    position: absolute;
+}
+.colorEffect i:hover{
+    cursor: pointer;
+}
+.fa-moon{
+    display: none;
+}
+.sun{
+    display: none;
+}
+.color{
+    background-color: white;
+    color: black;
+}
+.lineStyle{
+    border: 1px solid black;
+}
+.navbarcolor{
+    background-color: rgb(169, 199, 189);
+}
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
+.form-input{
+    background-color:hwb(189 89% 8%);
+    color: #262626;
+}
+.colorEffect{
+    margin-right: 2rem;
+    position: relative;
+    top: 0.5rem;
+    right: 2rem;
+}
+.mode1{
+    display: none;
+    margin-top: 2rem;
+    margin-left: -2.5rem;
+    text-align: center;
+    background-color: #ababab;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    width: 100px;
+}
+
+.mode2{
+    display: none;
+    margin-top: 2rem;
+    margin-left: -2.5rem;
+    text-align: center;
+    background-color: #ababab;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    width: 100px;
+}
+.light{
+    display: block;
+}
+
+
+@media(max-width:420px){
     .logo p{
         font-size: 3rem;
     }
@@ -508,7 +568,11 @@ input,textarea{
     .uparrow a{
         margin-left: 80%;
     } 
-
+    .colorEffect{
+        position: absolute;
+        top: -14px;
+        left: 4rem;
+    }
 }
 
 @media(max-width:906px){
