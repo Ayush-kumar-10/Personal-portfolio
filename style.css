@@ -494,6 +494,12 @@ input,textarea{
     }
 }
 @media(max-width:600px){
+    .mode1{
+        display: none;
+    }
+    .mode2{
+        display: none;
+    }
     .nav-icon{
         opacity: 1;
         font-size: 25px;
